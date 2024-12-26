@@ -1,6 +1,7 @@
 import "./App.css";
 import FirstComponent from "./FirstComponent";
 import SecondComponent from "./SecondComponent";
+import ComponentUsingState from "./ComponentUsingState";
 
 function App() {
   const numbers = [1, 2, 3];
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <FirstComponent numbers={numbers} books={books} message={message} />
       <SecondComponent numbers={numbers} books={books} message={message} />
+      <ComponentUsingState />
     </div>
   );
 }
